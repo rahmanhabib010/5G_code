@@ -1,0 +1,107 @@
+Metric-Name,Metric-type,Metric-desc,Metric-cur-val,5g-component
+gnb,gauge,gNodeBs ,1,amf
+fivegs_amffunction_mm_confupdate,counter,Number of UE Configuration Update commands requested by the AMF ,2,amf
+fivegs_amffunction_rm_reginitreq,counter,Number of initial registration requests received by the AMF ,2,amf
+fivegs_amffunction_rm_regemergreq,counter,Number of emergency registration requests received by the AMF ,0,amf
+fivegs_amffunction_mm_paging5greq,counter,Number of 5G paging procedures initiated at the AMF ,3,amf
+fivegs_amffunction_rm_regperiodreq,counter,Number of periodic registration update requests received by the AMF ,0,amf
+fivegs_amffunction_mm_confupdatesucc,counter,Number of UE Configuration Update complete messages received by the AMF ,0,amf
+fivegs_amffunction_rm_reginitsucc,counter,Number of successful initial registrations at the AMF ,2,amf
+fivegs_amffunction_amf_authreject,counter,Number of authentication rejections sent by the AMF ,0,amf
+fivegs_amffunction_rm_regmobreq,counter,Number of mobility registration update requests received by the AMF ,0,amf
+amf_session,gauge,AMF Sessions ,1,amf
+fivegs_amffunction_rm_regmobsucc,counter,Number of successful mobility registration updates at the AMF ,0,amf
+fivegs_amffunction_amf_authreq,counter,Number of authentication requests sent by the AMF ,1,amf
+fivegs_amffunction_rm_regemergsucc,counter,Number of successful emergency registrations at the AMF ,0,amf
+fivegs_amffunction_mm_paging5gsucc,counter,Number of successful 5G paging procedures initiated at the AMF ,0,amf
+ran_ue,gauge,RAN UEs ,1,amf
+fivegs_amffunction_rm_regperiodsucc,counter,Number of successful periodic registration update requests at the AMF ,0,amf
+fivegs_amffunction_rm_regtime,histogram,Time of registration procedure ,0,amf
+fivegs_amffunction_rm_registeredsubnbr,gauge,Number of registered state subscribers per AMF ,0,amf
+"fivegs_amffunction_rm_registeredsubnbr{plmnid=""00101"",snssai=""1-fffffa""}",0,0,1,amf
+fivegs_amffunction_rm_reginitfail,counter,Number of failed initial registrations at the AMF ,0,amf
+fivegs_amffunction_rm_regmobfail,counter,Number of failed mobility registration updates at the AMF ,0,amf
+fivegs_amffunction_rm_regperiodfail,counter,Number of failed periodic registration update requests at the AMF ,0,amf
+fivegs_amffunction_rm_regemergfail,counter,Number of failed emergency registrations at the AMF ,0,amf
+fivegs_amffunction_amf_authfail,counter,Number of authentication failure messages received by the AMF ,0,amf
+process_max_fds,gauge,Maximum number of open file descriptors. ,1024,amf
+process_virtual_memory_max_bytes,gauge,Maximum amount of virtual memory available in bytes. ,-1,amf
+process_cpu_seconds_total,gauge,Total user and system CPU time spent in seconds. ,0,amf
+process_virtual_memory_bytes,gauge,Virtual memory size in bytes. ,159670272,amf
+process_resident_memory_bytes,gauge,Resident memory size in bytes. ,18198528,amf
+process_start_time_seconds,gauge,Start time of the process since unix epoch in seconds. ,65639658,amf
+process_open_fds,gauge,Number of open file descriptors. ,48,amf
+fivegs_pcffunction_pa_policyamassoreq,counter,Number of AM policy association requests ,0,pcf
+"fivegs_pcffunction_pa_policyamassoreq{plmnid=""00101"",snssai=""1-fffffa""}",0,0,2,pcf
+fivegs_pcffunction_pa_policyamassosucc,counter,Number of successful AM policy associations ,0,pcf
+"fivegs_pcffunction_pa_policyamassosucc{plmnid=""00101"",snssai=""1-fffffa""}",0,0,2,pcf
+fivegs_pcffunction_pa_policysmassoreq,counter,Number of SM policy association requests ,0,pcf
+"fivegs_pcffunction_pa_policysmassoreq{plmnid=""00101"",snssai=""1-fffffa""}",0,0,2,pcf
+fivegs_pcffunction_pa_policysmassosucc,counter,Number of successful SM policy associations ,0,pcf
+"fivegs_pcffunction_pa_policysmassosucc{plmnid=""00101"",snssai=""1-fffffa""}",0,0,2,pcf
+fivegs_pcffunction_pa_sessionnbr,gauge,Active Sessions ,0,pcf
+"fivegs_pcffunction_pa_sessionnbr{plmnid=""00101"",snssai=""1-fffffa""}",0,0,1,pcf
+process_max_fds,gauge,Maximum number of open file descriptors. ,1024,pcf
+process_virtual_memory_max_bytes,gauge,Maximum amount of virtual memory available in bytes. ,-1,pcf
+process_cpu_seconds_total,gauge,Total user and system CPU time spent in seconds. ,0,pcf
+process_virtual_memory_bytes,gauge,Virtual memory size in bytes. ,189378560,pcf
+process_resident_memory_bytes,gauge,Resident memory size in bytes. ,17842176,pcf
+process_start_time_seconds,gauge,Start time of the process since unix epoch in seconds. ,65639673,pcf
+process_open_fds,gauge,Number of open file descriptors. ,45,pcf
+gn_rx_createpdpcontextreq,counter,Received GTPv1C CreatePDPContextRequest messages ,0,smf
+gn_rx_deletepdpcontextreq,counter,Received GTPv1C DeletePDPContextRequest messages ,0,smf
+gtp1_pdpctxs_active,gauge,Active GTPv1 PDP Contexts (GGSN) ,0,smf
+fivegs_smffunction_sm_n4sessionreport,counter,Number of requested N4 session reports evidented by SMF ,2,smf
+ues_active,gauge,Active User Equipments ,1,smf
+gtp2_sessions_active,gauge,Active GTPv2 Sessions (PGW) ,0,smf
+gtp_node_gn_rx_parse_failed,counter,Received GTPv1C messages discarded due to parsing failure ,0,smf
+s5c_rx_createsession,counter,Received GTPv2C CreateSessionRequest messages ,0,smf
+s5c_rx_deletesession,counter,Received GTPv2C DeleteSessionRequest messages ,0,smf
+gtp_new_node_failed,counter,Unable to allocate new GTP (peer) Node ,0,smf
+s5c_rx_parse_failed,counter,Received GTPv2C messages discarded due to parsing failure ,0,smf
+fivegs_smffunction_sm_n4sessionreportsucc,counter,Number of successful N4 session reports evidented by SMF ,2,smf
+gtp_node_gn_rx_createpdpcontextreq,counter,Received GTPv1C CreatePDPContextRequest messages ,0,smf
+fivegs_smffunction_sm_n4sessionestabreq,counter,Number of requested N4 session establishments evidented by SMF ,0,smf
+bearers_active,gauge,Active Bearers ,1,smf
+gn_rx_parse_failed,counter,Received GTPv1C messages discarded due to parsing failure ,0,smf
+gtp_peers_active,gauge,Active GTP peers ,0,smf
+gtp_node_gn_rx_deletepdpcontextreq,counter,Received GTPv1C DeletePDPContextRequest messages ,0,smf
+gtp_node_s5c_rx_parse_failed,counter,Received GTPv2C messages discarded due to parsing failure ,0,smf
+gtp_node_s5c_rx_createsession,counter,Received GTPv2C CreateSessionRequest messages ,0,smf
+gtp_node_s5c_rx_deletesession,counter,Received GTPv2C DeleteSessionRequest messages ,0,smf
+fivegs_smffunction_sm_sessionnbr,gauge,Active Sessions ,0,smf
+"fivegs_smffunction_sm_sessionnbr{plmnid=""00101"",snssai=""1-fffffa""}",0,0,1,smf
+fivegs_smffunction_sm_pdusessioncreationreq,counter,Number of PDU sessions requested to be created by the SMF ,0,smf
+"fivegs_smffunction_sm_pdusessioncreationreq{plmnid="""",snssai=""""}",0,0,2,smf
+"fivegs_smffunction_sm_pdusessioncreationreq{plmnid=""00101"",snssai=""1-fffffa""}",0,0,2,smf
+fivegs_smffunction_sm_pdusessioncreationsucc,counter,Number of PDU sessions successfully created by the SMF ,0,smf
+"fivegs_smffunction_sm_pdusessioncreationsucc{plmnid=""00101"",snssai=""1-fffffa""}",0,0,2,smf
+fivegs_smffunction_sm_qos_flow_nbr,gauge,Number of QoS flows at the SMF ,0,smf
+"fivegs_smffunction_sm_qos_flow_nbr{plmnid=""00101"",snssai=""1-fffffa"",fiveqi=""9""}",0,0,2,smf
+fivegs_smffunction_sm_n4sessionestabfail,counter,Number of failed N4 session establishments evidented by SMF ,0,smf
+fivegs_smffunction_sm_pdusessioncreationfail,counter,Number of PDU sessions failed to be created by the SMF ,0,smf
+process_max_fds,gauge,Maximum number of open file descriptors. ,1024,smf
+process_virtual_memory_max_bytes,gauge,Maximum amount of virtual memory available in bytes. ,-1,smf
+process_cpu_seconds_total,gauge,Total user and system CPU time spent in seconds. ,1,smf
+process_virtual_memory_bytes,gauge,Virtual memory size in bytes. ,3123200000,smf
+process_resident_memory_bytes,gauge,Resident memory size in bytes. ,41385984,smf
+process_start_time_seconds,gauge,Start time of the process since unix epoch in seconds. ,65639653,smf
+process_open_fds,gauge,Number of open file descriptors. ,43,smf
+fivegs_ep_n3_gtp_indatapktn3upf,counter,Number of incoming GTP data packets on the N3 interface ,0,upf
+fivegs_ep_n3_gtp_outdatapktn3upf,counter,Number of outgoing GTP data packets on the N3 interface ,0,upf
+fivegs_upffunction_sm_n4sessionestabreq,counter,Number of requested N4 session establishments ,2,upf
+fivegs_upffunction_sm_n4sessionreport,counter,Number of requested N4 session reports ,2,upf
+fivegs_upffunction_sm_n4sessionreportsucc,counter,Number of successful N4 session reports ,2,upf
+fivegs_upffunction_upf_sessionnbr,gauge,Active Sessions ,1,upf
+fivegs_ep_n3_gtp_indatavolumeqosleveln3upf,counter,Data volume of incoming GTP data packets per QoS level on the N3 interface ,0,upf
+fivegs_ep_n3_gtp_outdatavolumeqosleveln3upf,counter,Data volume of outgoing GTP data packets per QoS level on the N3 interface ,0,upf
+fivegs_upffunction_sm_n4sessionestabfail,counter,Number of failed N4 session establishments ,0,upf
+fivegs_upffunction_upf_qosflows,gauge,Number of QoS flows of UPF ,0,upf
+"fivegs_upffunction_upf_qosflows{dnn=""internet""}",0,0,1,upf
+process_max_fds,gauge,Maximum number of open file descriptors. ,1024,upf
+process_virtual_memory_max_bytes,gauge,Maximum amount of virtual memory available in bytes. ,-1,upf
+process_cpu_seconds_total,gauge,Total user and system CPU time spent in seconds. ,1,upf
+process_virtual_memory_bytes,gauge,Virtual memory size in bytes. ,283549696,upf
+process_resident_memory_bytes,gauge,Resident memory size in bytes. ,24518656,upf
+process_start_time_seconds,gauge,Start time of the process since unix epoch in seconds. ,65639648,upf
+process_open_fds,gauge,Number of open file descriptors. ,18,upf

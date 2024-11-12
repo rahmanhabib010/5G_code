@@ -1,0 +1,89 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "prom",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-prom-e9ee9d6ef469d73ca19a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "prom",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "prometheus-client-c"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "libprom",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "prom::@fe1444634e76fa3c3a03",
+					"jsonFile" : "target-prom-eae5257b7b9c704327d2.json",
+					"name" : "prom",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cci/ashish/ash_open5gs/build/subprojects/prometheus-client-c/__CMake_build",
+		"source" : "/home/cci/ashish/ash_open5gs/subprojects/prometheus-client-c"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

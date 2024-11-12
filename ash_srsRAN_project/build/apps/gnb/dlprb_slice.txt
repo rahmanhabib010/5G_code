@@ -1,0 +1,94 @@
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------
+Slice		DLPRB		ParitionResourceMax			 NumSlots = 6000
+----------------------------------------------------------------------------

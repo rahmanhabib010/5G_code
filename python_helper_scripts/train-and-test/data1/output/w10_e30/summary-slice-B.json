@@ -1,0 +1,6 @@
+{
+    "Train-Accuracy": "0.8918454935622318",
+    "Test-Accuracy": "0.7430555555555556",
+    "epoch": 30,
+    "windowSize": 10
+}

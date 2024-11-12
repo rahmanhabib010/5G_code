@@ -1,0 +1,62 @@
+name: '[Kafka API] Demo: Conan Build'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+env:
+  DEMO_PROJ_DIR: demo_projects_for_build/conan_build
+
+jobs:
+  kafka-api-demo-conan-build:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-22.04
+          - macos-12
+          - windows-latest
+
+    runs-on: ${{ matrix.os }}
+
+    env:
+      OS_VERSION: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Prepare
+        run: |
+          pip3 install conan==1.64.1
+
+      - name: Build (non-windows)
+        if: ${{!contains(matrix.os, 'windows')}}
+        run: |
+          cd ${DEMO_PROJ_DIR}
+          mkdir -p build
+          cd build
+
+          conan install .. --build=missing
+
+          cmake .. -G "Unix Makefiles"
+          cmake --build .
+
+          bin/kafka_producer
+          bin/kafka_consumer
+
+      - name: Build (windows)
+        if: contains(matrix.os, 'windows')
+        run: |
+          cd $Env:DEMO_PROJ_DIR
+          mkdir -p build
+          cd build
+
+          conan install .. --build=missing
+
+          cmake ..
+          cmake --build .
+
+          bin/kafka_producer.exe
+          bin/kafka_consumer.exe
+

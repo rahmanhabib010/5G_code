@@ -1,0 +1,77 @@
+name: "[Kafka API] Generate Documents"
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  kafka-api-build-doc:
+    runs-on: ubuntu-22.04
+    env:
+        BUILD_SUB_DIR: build/sub-build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: |
+          mkdir -p $BUILD_SUB_DIR
+          cd $BUILD_SUB_DIR
+
+          # 1. Install python3-pip
+          sudo apt install -y python3-pip
+          pip3 install markdown
+          # 2. Install doxygen
+          sudo apt install -y doxygen
+
+      - name: Config
+        run: |
+          cd $BUILD_SUB_DIR
+          cmake ../.. -DBUILD_OPTION_DOC_ONLY=ON
+
+      - name: Build
+        run: |
+          cd $BUILD_SUB_DIR
+          make VERBOSE=1
+
+      - name: Collect
+        run: |
+          mkdir document
+          cp $BUILD_SUB_DIR/doc/index.html document
+          cp -r $BUILD_SUB_DIR/doc/markdown document
+          cp -r $BUILD_SUB_DIR/doc/doxygen document
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+            name: document
+            path: document
+
+
+  kafka-api-deploy-doc:
+    needs: [kafka-api-build-doc]
+    if: github.event_name == 'push'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v1
+        with:
+          name: document
+
+      - name: Deploy to Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: document
+
